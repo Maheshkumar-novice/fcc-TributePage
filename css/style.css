@@ -38,12 +38,14 @@ body {
   max-width: 100%;
   width: 800px;
   margin: 0 auto;
+  animation: slideInFromTop 0.7s ease-in;
 }
 
 #img-caption {
   font-family: monospace, sans-serif;
   font-size: 2rem;
   padding-top: 20px;
+  animation: slideInFromLeft 0.7s ease-in;
 }
 
 #tribute-info {
@@ -99,4 +101,28 @@ body {
 
 #tribute-link {
   padding-left: 0.4rem;
+}
+
+@media (max-width: 500px) {
+  #img-caption {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
