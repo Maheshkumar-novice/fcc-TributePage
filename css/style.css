@@ -103,9 +103,23 @@ body {
   padding-left: 0.4rem;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 1300px) {
+  #tribute-info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
   #img-caption {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  #tribute-info {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #img-caption {
+    font-size: 1rem;
   }
 }
 
